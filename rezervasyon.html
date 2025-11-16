@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezervasyon - Kahve Evi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Kahve Evi</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="urunler.html" class="nav-link">Ürünler</a></li>
+                <li><a href="etkinlikler.html" class="nav-link">Etkinlikler</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="rezervasyon.html" class="nav-link active">Rezervasyon</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <h1>Masa Rezervasyonu</h1>
+        <p>Masanızı önceden ayırtın, rahat bir deneyim yaşayın</p>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="reservation-layout">
+            <div class="reservation-form-wrapper">
+                <h2 class="form-title">Rezervasyon Formu</h2>
+                <form class="reservation-form">
+                    <div class="input-group">
+                        <label>Adınız Soyadınız</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Telefon Numaranız</label>
+                        <input type="tel" required>
+                    </div>
+                    <div class="input-group">
+                        <label>E-posta Adresiniz</label>
+                        <input type="email" required>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Tarih</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Saat</label>
+                            <input type="time" required>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label>Kişi Sayısı</label>
+                        <select required>
+                            <option value="">Seçiniz</option>
+                            <option value="1">1 Kişi</option>
+                            <option value="2">2 Kişi</option>
+                            <option value="3">3 Kişi</option>
+                            <option value="4">4 Kişi</option>
+                            <option value="5">5+ Kişi</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>Özel İstekler (Opsiyonel)</label>
+                        <textarea rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="form-submit-btn">Rezervasyon Yap</button>
+                </form>
+            </div>
+
+            <div class="reservation-sidebar">
+                <div class="info-card">
+                    <h3>Çalışma Saatleri</h3>
+                    <p><strong>Pazartesi - Cuma:</strong><br>08:00 - 22:00</p>
+                    <p><strong>Cumartesi - Pazar:</strong><br>09:00 - 23:00</p>
+                </div>
+                <div class="info-card">
+                    <h3>İletişim</h3>
+                    <p><strong>Telefon:</strong><br>+90 555 123 4567</p>
+                    <p><strong>E-posta:</strong><br>info@kahveevi.com</p>
+                </div>
+                <div class="info-card">
+                    <h3>Notlar</h3>
+                    <p>Rezervasyonlarınız en az 2 saat önceden yapılmalıdır. Grup rezervasyonları için lütfen telefon ile iletişime geçin.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; 2024 Kahve Evi. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>
